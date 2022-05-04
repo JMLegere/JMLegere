@@ -1,0 +1,53 @@
+---
+title:
+---
+
+# {{title}}
+
+#journal
+
+# Tasks Today
+
+```dataview
+
+task where contains(text, this.file.name)
+
+```
+
+---
+
+# To Review Today
+
+## Daily Writing
+
+```dataview
+
+list from "Permanent Notes" where date(sr-due)<=date(this.file.name) 
+
+```
+
+---
+
+## Literature
+
+```dataview
+
+list from "Literature Notes" where date(sr-due)<=date(this.file.name) 
+
+```
+
+---
+
+## Active Projects
+
+```dataview
+
+list from #project/active where date(sr-due)<=date(this.file.name) 
+
+```
+
+---
+
+# Meeting Notes Today
+
+# Scratch Pad
